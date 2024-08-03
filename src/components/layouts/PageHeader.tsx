@@ -23,7 +23,7 @@ export function PageHeader() {
     function isScreenSmall() {
         return window.innerWidth < 1024
     }
-
+    
     return (
         <header className="fixed top-0 left-0 w-full z-[999]">
             <nav>
@@ -41,7 +41,7 @@ export function PageHeader() {
                     </div>
 
                     <div className="flex-shrink-0 hidden lg:flex">
-                        <Button>Get Started</Button>
+                        <Button url="/" text="Get Started"/>
                     </div>
 
                     <div className="flex lg:hidden z-[999]">

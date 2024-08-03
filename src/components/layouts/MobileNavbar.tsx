@@ -1,5 +1,5 @@
-import { Button } from "../ui/button/Button";
-import { Link } from "../ui/Link/Link";
+import { Button } from "../ui/button/Button"
+import { Link } from "../ui/Link/Link"
 
 export function MobileNavbar() {
     return (
@@ -8,7 +8,7 @@ export function MobileNavbar() {
             <Link href="/about-us" variant="headerLink" className="text-6xl my-6 font-extrabold">ABOUT US</Link>
             <Link href="/showcase" variant="headerLink" className="text-6xl my-6 font-extrabold">SHOWCASE</Link>
             <Link href="/pricing" variant="headerLink" className="text-6xl my-6 font-extrabold">PRICING</Link>
-            <Button className="my-6">Get Started</Button>
+            <Button url="/" text="Get Started" className="my-6"/>
         </div>
     )
 }

@@ -16,10 +16,16 @@ export default {
             ["primary-dark"]: "#ff8838",
             ["secondary-light"]: "#FD4D4A",
             secondary: "#fd3a36",
-            ["secondary-dark"]: "#E33430"
+            ["secondary-dark"]: "#E33430",
+            pink: "#FF5C7D",
+            yellow: "#FFE95C",
+            purple: "#CB5CFF",
+            cyan: "#5CFFF1",
+            green: "#A9FF59",
+
         }
       }
     },
     plugins: [],
-  }
+}
   
