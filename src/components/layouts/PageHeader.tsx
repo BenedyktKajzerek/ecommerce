@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../../assets/unknown.png"
-import { Link } from "../ui/Link/Link";
+import { Link } from "../ui/link/Link";
 import { Button } from "../ui/button/Button";
 import { MobileNavbar } from "./MobileNavbar";
 

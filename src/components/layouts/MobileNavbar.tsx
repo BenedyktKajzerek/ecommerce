@@ -1,5 +1,5 @@
 import { Button } from "../ui/button/Button"
-import { Link } from "../ui/Link/Link"
+import { Link } from "../ui/link/Link"
 
 export function MobileNavbar() {
     return (

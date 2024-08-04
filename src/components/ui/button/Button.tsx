@@ -20,7 +20,7 @@ export const buttonVariants = cva(["transition-colors"], {
     }
 })
 
-type ButtonProps = VariantProps<typeof buttonVariants> & ComponentProps<"a"> & {text: string, url: string , withArrow?: boolean}
+export type ButtonProps = VariantProps<typeof buttonVariants> & ComponentProps<"a"> & {text: string, url: string , withArrow?: boolean}
 
 export function Button({ variant, size, url, text="Click me!", withArrow=false, className, ...props }: ButtonProps) {
     return (
