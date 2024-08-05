@@ -22,6 +22,20 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     width: 100%;
+    height: auto;
+}
+
+.slider {
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-150px * 16));
+    }
 }
 
 @media all and (max-width: 1279px) {

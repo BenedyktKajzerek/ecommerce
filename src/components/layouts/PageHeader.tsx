@@ -27,7 +27,7 @@ export function PageHeader() {
     return (
         <header className="fixed top-0 left-0 w-full z-[999]">
             <nav>
-                <div className="container h-36 flex justify-between items-center gap-10">
+                <div className="container h-36 flex justify-between items-center gap-10 py-10">
                     
                     <a href="/" className="block size-10 z-[999]">
                         <img src={logo} alt="Logo"/>

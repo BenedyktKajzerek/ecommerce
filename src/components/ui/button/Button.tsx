@@ -11,7 +11,7 @@ export const buttonVariants = cva(["transition-colors"], {
         size: {
             small: ["text-lg px-8 h-14"],
             medium: ["text-xl py-4 px-8"],
-            large: ["text-xl py-4 px-6 xl:text-2xl xl:py-6 xl:px-10"]
+            large: ["text-md sm:text-xl py-4 px-6 xl:text-2xl xl:py-6 xl:px-10"]
         }
     },
     defaultVariants: {
