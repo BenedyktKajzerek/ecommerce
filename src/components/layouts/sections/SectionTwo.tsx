@@ -22,8 +22,8 @@ export function SectionTwo() {
             <div className="container flex flex-col-reverse lg:flex-row lg:justify-between items-center h-[600px]">
 
                 <div className="sm:min-w-[420px] max-w-[420px] lg:max-w-[680px] max-h-[400px] h-full w-full grid grid-cols-2 lg:grid-cols-3 gap-4">
-                    {icons.map(icon => (
-                        <div className="flex flex-col items-center text-center font-medium">
+                    {icons.map((icon, index) => (
+                        <div key={index} className="flex flex-col items-center text-center font-medium">
                             <div className="flex flex-col items-center">{ icon.icon } <div className="mt-2">{ icon.description }</div></div>
                         </div>
                     ))}

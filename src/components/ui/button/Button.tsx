@@ -25,7 +25,7 @@ export type ButtonProps = VariantProps<typeof buttonVariants> & ComponentProps<"
 export function Button({ variant, size, url, text="Click me!", withArrow=false, className, ...props }: ButtonProps) {
     return (
         <a href={url} {...props} className={twMerge(buttonVariants({ variant, size }), className)}>
-            <span className="z-10 flex items-center">{text} {withArrow && (<ArrowRight className="ml-3 xl:mt-1 size-5 xl:size-6"/>)}</span>
+            <span key={url} className="z-10 flex items-center">{text} {withArrow && (<ArrowRight className="ml-3 xl:mt-1 size-5 xl:size-6"/>)}</span>
         </a>    
     ) 
 }

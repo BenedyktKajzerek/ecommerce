@@ -4,8 +4,8 @@ import Tilt from "react-parallax-tilt"
 import { Content } from "../Content"
 
 const btns = [
-    <Button url="/" text="Get Started" withArrow={true} size="large" className="bg-primary"></Button>,
-    <Button url="/" text="Get More Info" size="large"/>
+    <Button url="/get-started" text="Get Started" withArrow={true} size="large" className="bg-primary"></Button>,
+    <Button url="/get-more-info" text="Get More Info" size="large"/>
 ]
 
 export function HeroHome() {
