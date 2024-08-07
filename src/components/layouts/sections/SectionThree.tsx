@@ -47,8 +47,7 @@ const cars = [
     car4, car5, car6,
     car7, car8, car9,
     car10, car11, car12,
-    car13, car14, car15,
-    car16
+    car13, car14, car15
 ]
 
 export function SectionThree() {
@@ -96,10 +95,13 @@ export function SectionThree() {
                 </ul>
             </div>
 
-            <div data-animated="true" data-direction="right" data-speed="fast" className="scroller" >
+            <div data-animated="true" data-direction="right" data-speed="slow" className="scroller" >
                 <ul className="tag-list scroller_inner">
-                    {cars.map((car, index) => (
-                        <CarSlide key={index} src={car}/>
+                    {cars.map((car, index) => (                        
+                        <CarSlide key={index} src={car} variant={`clip-${index%3+1}`}/>
+                    ))}
+                    {cars.map((car, index) => (                        
+                        <CarSlide key={index} src={car} variant={`clip-${index%3+1}`}/>
                     ))}
                 </ul>
             </div>

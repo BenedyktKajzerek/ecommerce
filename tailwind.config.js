@@ -23,6 +23,10 @@ export default {
             cyan: "#5CFFF1",
             green: "#A9FF59",
 
+        },
+        screens: {
+            'xs': '500px',
+            '3xl': '1640px'
         }
       }
     },

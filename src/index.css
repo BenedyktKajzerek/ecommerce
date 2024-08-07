@@ -32,6 +32,12 @@ body {
     }
 }
 
+@media all and (max-width: 499px) {
+    .slider-500 {
+        padding: 0;
+    }
+}
+
 /* INFINITE SCROLL ANIMATION */
 
 .scroller {
@@ -95,4 +101,17 @@ body {
 .tag-list li {
     padding: 1rem;
     font-weight: 500;
+}
+
+/* SWIPER */
+
+.swiper-pagination-bullet {
+    background-color: grey;
+    width: 24px;
+    height: 3px;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
 }

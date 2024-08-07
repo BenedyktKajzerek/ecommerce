@@ -16,7 +16,6 @@ const btns = [
 ]
 
 export function SectionTwo() {
-
     return (
         <section className="pt-20 lg:pt-40">
             <div className="container flex flex-col-reverse lg:flex-row lg:justify-between items-center h-[600px]">
