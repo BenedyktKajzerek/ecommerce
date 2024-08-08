@@ -15,7 +15,7 @@ export function SectionFour() {
 
     return (
         <section className="pt-20 lg:pt-40 overflow-hidden">
-            <div className={"container slider-500"}>
+            <div className="container slider-500">
 
                 <Swiper 
                     modules={[Pagination]} 
@@ -29,57 +29,73 @@ export function SectionFour() {
                         }
                     }}
                     centeredSlides={true}
-                    className="mySwiper max-h-[700px] flex justify-center overflow-visible text-black"
+                    className="mySwiper md:max-h-[700px] flex justify-center overflow-visible text-black"
                 >
-                    <SwiperSlide className="flex flex-col md:flex-row xs:rounded-3xl overflow-hidden">
+                    <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
                         <div className="md:w-1/2">
-                            <img src={img} alt="" className="w-full h-full"/>    
+                            <img src={img} alt="" className="w-full h-auto"/>    
                         </div>
-                        <div className="md:w-1/2 bg-pink p-20 flex flex-col text-center align-middle justify-center">
-                            <h1 className="text-7xl font-extrabold mb-12">COOL CARS, FAST CARS</h1>
+                        <div className="swiper-content-clamp md:w-1/2 bg-pink flex flex-col text-center align-middle justify-center">
+                            <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+                                PREMIUM<br /> 
+                                <span className="span-stroke">DETAILING</span>
+                            </h1>
                             <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="flex flex-col md:flex-row xs:rounded-3xl overflow-hidden">
+                    <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
                         <div className="md:w-1/2">
-                            <img src={img} alt="" className="w-full h-full"/>    
+                            <img src={img} alt="" className="w-full h-auto"/>    
                         </div>
-                        <div className="md:w-1/2 bg-yellow p-20 flex flex-col text-center align-middle justify-center">
-                            <h1 className="text-7xl font-extrabold mb-12">Lorem, ipsum.</h1>
+                        <div className="swiper-content-clamp md:w-1/2 bg-yellow flex flex-col text-center align-middle justify-center">
+                            <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+                                PREMIUM<br /> 
+                                <span className="span-stroke">DETAILING</span>
+                            </h1>
                             <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="flex flex-col md:flex-row xs:rounded-3xl overflow-hidden">
+                    <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
                         <div className="md:w-1/2">
-                            <img src={img} alt="" className="w-full h-full"/>    
+                            <img src={img} alt="" className="w-full h-auto"/>    
                         </div>
-                        <div className="md:w-1/2 bg-purple p-20 flex flex-col text-center align-middle justify-center">
-                            <h1 className="text-7xl font-extrabold mb-12">Lorem, ipsum.</h1>
+                        <div className="swiper-content-clamp md:w-1/2 bg-purple flex flex-col text-center align-middle justify-center">
+                            <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+                                PREMIUM<br /> 
+                                <span className="span-stroke">DETAILING</span>
+                            </h1>
                             <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="flex flex-col md:flex-row xs:rounded-3xl overflow-hidden">
+                    <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
                         <div className="md:w-1/2">
-                            <img src={img} alt="" className="w-full h-full"/>    
+                            <img src={img} alt="" className="w-full h-auto"/>    
                         </div>
-                        <div className="md:w-1/2 bg-cyan p-20 flex flex-col text-center align-middle justify-center">
-                            <h1 className="text-7xl font-extrabold mb-12">Lorem, ipsum.</h1>
+                        <div className="swiper-content-clamp md:w-1/2 bg-cyan flex flex-col text-center align-middle justify-center">
+                            <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+                                PREMIUM<br /> 
+                                <span className="span-stroke">DETAILING</span>
+                            </h1>
                             <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="flex flex-col md:flex-row xs:rounded-3xl overflow-hidden">
+                    <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
                         <div className="md:w-1/2">
-                            <img src={img} alt="" className="w-full h-full"/>    
+                            <img src={img} alt="" className="w-full h-auto"/>    
                         </div>
-                        <div className="md:w-1/2 bg-green p-20 flex flex-col text-center align-middle justify-center">
-                            <h1 className="text-7xl font-extrabold mb-12">Lorem, ipsum.</h1>
+                        <div className="swiper-content-clamp md:w-1/2 bg-green flex flex-col text-center align-middle justify-center">
+                            <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+                                PREMIUM<br /> 
+                                <span className="span-stroke">DETAILING</span>
+                            </h1>
                             <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
                         </div>
                     </SwiperSlide>
+                    
 
                 </Swiper>
 
-                <div className="swiper-custom-pagination swiper-pagination-clickable mt-48 flex justify-center gap-5"/>
+                <div className="swiper-custom-pagination swiper-pagination-clickable mt-20  flex justify-center gap-5"/>
                 
                 <div className="flex justify-center">
                     <Button url="/" text="Get Started" size="large" withArrow={true} className="bg-primary-light mt-16"/>

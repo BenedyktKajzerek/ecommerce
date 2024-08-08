@@ -15,6 +15,10 @@ body {
     color: white;
 }
 
+/* =============== */
+/* === GENERAL === */
+/* =============== */
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -23,6 +27,10 @@ body {
     padding-right: 100px;
     width: 100%;
     height: auto;
+}
+
+.section {
+    background-color: #0f0f0f;
 }
 
 @media all and (max-width: 1279px) {
@@ -38,7 +46,9 @@ body {
     }
 }
 
-/* INFINITE SCROLL ANIMATION */
+/* ================================= */
+/* === INFINITE SCROLL ANIMATION === */
+/* ================================= */
 
 .scroller {
     max-width: 100%;
@@ -92,8 +102,6 @@ body {
     }
 }
   
-/* general styles */
-
 .tag-list {
     list-style: none;
 }
@@ -103,7 +111,9 @@ body {
     font-weight: 500;
 }
 
-/* SWIPER */
+/* ============== */
+/* === SWIPER === */
+/* ============== */
 
 .swiper-pagination-bullet {
     background-color: grey;
@@ -114,4 +124,19 @@ body {
 
 .swiper-pagination-bullet-active {
     background-color: white;
+}
+
+@media all and (min-width: 1400px) {
+    .swiper-header {
+        font-size: 4.5rem;
+    }
+
+}
+.swiper-content-clamp {
+    padding: clamp(30px, 4.6vw, 80px);
+}
+
+.span-stroke {
+    -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black;
+    color: transparent;
 }

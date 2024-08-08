@@ -14,7 +14,7 @@ export default function App() {
 
             <SectionTwo />
 
-            {/* <SectionThree /> */}
+            <SectionThree />
 
             <SectionFour />
             
