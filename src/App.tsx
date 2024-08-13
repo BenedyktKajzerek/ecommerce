@@ -1,25 +1,24 @@
-import { HeroHome } from "./components/layouts/sections/HeroHome";
-import { PageHeader } from "./components/layouts/PageHeader";
-import { SectionTwo } from "./components/layouts/sections/SectionTwo";
-import { SectionThree } from "./components/layouts/sections/SectionThree";
-import { SectionFour } from "./components/layouts/sections/SectionFour";
+import { HeroHome } from "./components/sections/HeroHome";
+import { Navbar } from "./components/layouts/Navbar";
+import { IconsSection } from "./components/sections/IconsSection";
+import { SliderSection } from "./components/sections/SliderSection";
+import { SwiperSection } from "./components/sections/SwiperSection";
+import { Footer } from "./components/layouts/Footer";
 
 export default function App() {
   return (
     <>
-        <PageHeader />
+      <Navbar />
 
-        <main>
-            <HeroHome />
+      <main>
+        <HeroHome />
+        <IconsSection />
+        {/* <SliderSection /> */}
+        <SwiperSection />
+      </main>
 
-            <SectionTwo />
-
-            <SectionThree />
-
-            <SectionFour />
-            
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        </main>
+      <Footer />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
-  )
-}
+  );
+};

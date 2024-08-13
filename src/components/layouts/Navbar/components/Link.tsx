@@ -5,8 +5,7 @@ import { twMerge } from "tailwind-merge"
 export const linkVariants = cva(["transition-colors"], {
     variants: {
         variant: {
-            headerLink: ["text-white", "hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl"],
-            footerLink: ["text-grey", "hover:text-white"]
+            headerLink: ["text-white hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl"],
         }
     },
     defaultVariants: {
@@ -17,5 +16,7 @@ export const linkVariants = cva(["transition-colors"], {
 type LinkProps = VariantProps<typeof linkVariants> & ComponentProps<"a">
 
 export function Link({ variant, className, ...props }: LinkProps) {
-    return <a {...props} className={twMerge(linkVariants({ variant }), className)}/>
+    return (
+        <a {...props} className={twMerge(linkVariants({ variant }), className)}/>
+    )
 }
