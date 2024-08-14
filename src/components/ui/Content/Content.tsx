@@ -1,9 +1,12 @@
+import React from "react";
+import { ButtonProps } from "../Button";
+
 interface ContentProps {
-    header: string
-    paragraph: string
-    buttons: any[]
-    align: string
-}
+  header: string;
+  paragraph: string;
+  buttons: React.ReactElement<ButtonProps>[];
+  align?: "left" | "center";
+};
 
 const Content: React.FC<ContentProps> = ({ header, paragraph, buttons, align="left"}) => {
   return (
@@ -17,10 +20,12 @@ const Content: React.FC<ContentProps> = ({ header, paragraph, buttons, align="le
       </p>
       
       <div className={`flex justify-center ${align === "left" && ("lg:justify-start")} gap-8 mt-12`}>
-        {buttons}
+        {buttons.map((button, index) => (
+          React.cloneElement(button, { key: index })
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export { Content };

@@ -10,16 +10,16 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-          {/* Brand and Social Icons */}
-          <div className="space-y-4">
+          {/* Brand and Social Media */}
+          <div className="space-y-8">
             <a href="/" className="block">
               <img
                 src={logo}
                 alt="Detailing"
-                className="w-24 lg:w-48"
+                className="w-10"
               />
             </a>
-
+  
             <ul className="flex space-x-4">
                 <SocialIcon
                     href="https://www.facebook.com/"
@@ -43,36 +43,36 @@ const Footer: React.FC = () => {
                 />
             </ul>
 
-            <div className="text-sm text-gray-400">
+            <div className="text-sm text-grey">
               <p>Premium Detailing Los Angeles</p>
               <p>Copyright 2024 - Premium Detailing - All rights reserved.</p>
             </div>
           </div>
 
           {/* Experiences */}
-          <FooterColumn title="Experiences">
-            <FooterLink href="/" text="Privacy Policy" />
-            <FooterLink href="/" text="Terms & Conditions" />
-            <FooterLink href="/" text="Cookies" />
+          <FooterColumn title="Legal">
+            <FooterLink href="/privacy-policy/" text="Privacy Policy" />
+            <FooterLink href="/terms-and-conditions/" text="Terms & Conditions" />
+            <FooterLink href="/cookies/" text="Cookies" />
           </FooterColumn>
 
           {/* About */}
           <FooterColumn title="About">
-            <FooterLink href="/" text="Our Story" />
-            <FooterLink href="/" text="FAQ" />
+            <FooterLink href="/our-story/" text="Our Story" />
+            <FooterLink href="/faq/" text="FAQ" />
           </FooterColumn>
 
           {/* Contact */}
           <FooterColumn title="Contact">
-            <FooterLink href="/" text="carscontact@gmail.com" />
-            <FooterLink href="/" text="123 456 789" />
-            <FooterLink href="/" text="Get In Touch" />
+            <FooterLink href="mailto:carscontact@gmail.com" text="carscontact@gmail.com" />
+            <FooterLink href="tel:123%20456%20789" text="123 456 789" />
+            <FooterLink href="/get-started/" text="Get In Touch" />
           </FooterColumn>
 
-        
+          {/* Buttons */}
           <div className="space-y-4">
-            <Button url="/get-more-info" text="Get More Info" size="large"/>
-            <Button url="/get-started" text="Get Started" withArrow={true} size="large" className="bg-primary"></Button>
+            <Button url="/get-more-info/" text="Get More Info" size="large" />
+            <Button url="/get-started/" text="Get Started" withArrow={true} size="large" className="bg-primary" />
           </div>
 
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../../../assets/unknown.png"
-import { Link } from "./components/Link";
+import { HeaderLink } from "./components/HeaderLink";
 import { Button } from "../../ui/Button";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
@@ -34,10 +34,10 @@ function Navbar() {
 
           <div className="flex-shrink-0 gap-2 hidden lg:flex">
             <ul className="flex">
-              <Link href="/" variant="headerLink">Home</Link>
-              <Link href="/about-us" variant="headerLink">About Us</Link>
-              <Link href="/showcase" variant="headerLink">Showcase</Link>
-              <Link href="/pricing" variant="headerLink">Pricing</Link>
+              <HeaderLink href="/" variant="headerLink">Home</HeaderLink>
+              <HeaderLink href="/about-us" variant="headerLink">About Us</HeaderLink>
+              <HeaderLink href="/showcase" variant="headerLink">Showcase</HeaderLink>
+              <HeaderLink href="/pricing" variant="headerLink">Pricing</HeaderLink>
             </ul>
           </div>
 

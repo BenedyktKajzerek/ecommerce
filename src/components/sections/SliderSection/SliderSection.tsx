@@ -68,30 +68,6 @@ function SliderSection() {
           <li>BMW</li>
           <li>Audi</li>
           <li>Tesla</li>
-          <li>Lamborghini</li>
-          <li>Ferrari</li>
-          <li>Porsche</li>
-          <li>McLaren</li>
-          <li>Rolls Royce</li>
-          <li>Bentley</li>
-          <li>Maserati</li>
-          <li>Jaguar</li>
-          <li>Mercedes</li>
-          <li>BMW</li>
-          <li>Audi</li>
-          <li>Tesla</li>
-          <li>Lamborghini</li>
-          <li>Ferrari</li>
-          <li>Porsche</li>
-          <li>McLaren</li>
-          <li>Rolls Royce</li>
-          <li>Bentley</li>
-          <li>Maserati</li>
-          <li>Jaguar</li>
-          <li>Mercedes</li>
-          <li>BMW</li>
-          <li>Audi</li>
-          <li>Tesla</li>
         </ul>
       </div>
 

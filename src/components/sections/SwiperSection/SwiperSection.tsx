@@ -22,7 +22,7 @@ function SwiperSection() {
           pagination={{
             clickable: true,
             el: ".swiper-custom-pagination",
-            renderBullet: function (index, className) {
+            renderBullet: () => {
               return '<span class="swiper-pagination-bullet">' + '</span>';
             }
           }}

@@ -13,7 +13,7 @@ export default function App() {
       <main>
         <HeroHome />
         <IconsSection />
-        {/* <SliderSection /> */}
+        <SliderSection />
         <SwiperSection />
       </main>
 

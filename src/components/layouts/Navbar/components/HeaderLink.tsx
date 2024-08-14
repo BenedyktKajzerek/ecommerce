@@ -1,6 +1,6 @@
-import { VariantProps, cva } from "class-variance-authority"
-import { ComponentProps } from "react"
-import { twMerge } from "tailwind-merge"
+import { VariantProps, cva } from "class-variance-authority";
+import { ComponentProps } from "react";
+import { twMerge } from "tailwind-merge";
 
 export const linkVariants = cva(["transition-colors"], {
     variants: {
@@ -11,12 +11,14 @@ export const linkVariants = cva(["transition-colors"], {
     defaultVariants: {
         variant: "headerLink"
     }
-})
+});
 
-type LinkProps = VariantProps<typeof linkVariants> & ComponentProps<"a">
+type LinkProps = VariantProps<typeof linkVariants> & ComponentProps<"a">;
 
-export function Link({ variant, className, ...props }: LinkProps) {
+function HeaderLink({ variant, className, ...props }: LinkProps) {
     return (
         <a {...props} className={twMerge(linkVariants({ variant }), className)}/>
-    )
-}
+    );
+};
+
+export { HeaderLink };
