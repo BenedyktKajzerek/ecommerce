@@ -1,8 +1,10 @@
-import { HeroHome } from "./components/sections/HeroHome";
 import { Navbar } from "./components/layouts/Navbar";
+import { HeroHome } from "./components/sections/HeroHome";
 import { IconsSection } from "./components/sections/IconsSection";
-import { SliderSection } from "./components/sections/SliderSection";
+// import { SliderSection } from "./components/sections/SliderSection";
 import { SwiperSection } from "./components/sections/SwiperSection";
+import { GallerySection } from "./components/sections/GallerySection/GallerySection";
+import { TestimonialsSection } from "./components/sections/TestimonialsSection";
 import { Footer } from "./components/layouts/Footer";
 
 export default function App() {
@@ -13,12 +15,13 @@ export default function App() {
       <main>
         <HeroHome />
         <IconsSection />
-        <SliderSection />
+        {/* <SliderSection /> */}
         <SwiperSection />
+        <GallerySection />
+        <TestimonialsSection />
       </main>
 
       <Footer />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
   );
 };

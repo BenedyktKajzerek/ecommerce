@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import { ArrowRight } from "lucide-react";
 
-const buttonVariants = cva(["transition-colors"], {
+const buttonVariants = cva(["transition-colors text-nowrap"], {
   variants: {
     variant: {
       default: [

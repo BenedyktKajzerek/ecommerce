@@ -8,7 +8,7 @@ interface ContentProps {
   align?: "left" | "center";
 };
 
-const Content: React.FC<ContentProps> = ({ header, paragraph, buttons, align="left"}) => {
+const Content: React.FC<ContentProps> = ({ header, paragraph, buttons, align="left" }) => {
   return (
     <div className={`${align === "left" ? "max-w-[580px] lg:mr-20 lg:text-left" : "max-w-[680px]"} text-center flex flex-col justify-center mb-20 lg:mb-0`}>
       <h1 className={`text-[calc(6vw)] 2xl:text-7xl -ml-1.5 font-extrabold leading-[calc(6vw)]`}>

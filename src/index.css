@@ -40,6 +40,13 @@ body {
     }
 }
 
+@media all and (max-width: 767px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media all and (max-width: 499px) {
     .slider-500 {
         padding: 0;
@@ -50,65 +57,72 @@ body {
 /* === INFINITE SCROLL ANIMATION === */
 /* ================================= */
 
-.scroller {
-    max-width: 100%;
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
 }
-  
-.scroller_inner {
-    padding-block: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+
+@keyframes scrollRight {
+  to {
+    right: -400px;
+  }
 }
-  
-.scroller[data-animated="true"] {
-    overflow: hidden;
-    /* -webkit-mask: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%,
-      transparent
-    );
-    mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent); */
+
+.itemLeft,
+.itemRight {
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
-  
-.scroller[data-animated="true"] .scroller_inner {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s)
-      var(--_animation-direction, forwards) linear infinite;
+
+.itemLeft {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  left: max(calc(200px * 9), 100%);
+  animation-name: scrollLeft;
 }
-  
-.scroller[data-direction="right"] {
-    --_animation-direction: reverse;
+
+.itemRight {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  right: max(calc(300px * 9), calc(100% + 400px));
+  animation-name: scrollRight;
 }
-  
-.scroller[data-direction="left"] {
-    --_animation-direction: forwards;
+
+.item1 {
+  animation-delay: calc(30s / 9 * (9 - 1) * -1);
 }
-  
-.scroller[data-speed="fast"] {
-    --_animation-duration: 30s;
+.item2 {
+  animation-delay: calc(30s / 9 * (9 - 2) * -1);
 }
-  
-.scroller[data-speed="slow"] {
-    --_animation-duration: 50s;
+.item3 {
+  animation-delay: calc(30s / 9 * (9 - 3) * -1);
 }
-  
-@keyframes scroll {
-    to {
-      transform: translate(calc(-50% - 0.5rem));
-    }
+.item4 {
+  animation-delay: calc(30s / 9 * (9 - 4) * -1);
 }
-  
-.tag-list {
-    list-style: none;
+.item5 {
+  animation-delay: calc(30s / 9 * (9 - 5) * -1);
 }
-  
-.tag-list li {
-    padding: 1rem;
-    font-weight: 500;
+.item6 {
+  animation-delay: calc(30s / 9 * (9 - 6) * -1);
+}
+.item7 {
+  animation-delay: calc(30s / 9 * (9 - 7) * -1);
+}
+.item8 {
+  animation-delay: calc(30s / 9 * (9 - 8) * -1);
+}
+.item9 {
+  animation-delay: calc(30s / 9 * (9 - 9) * -1);
 }
 
 /* ============== */

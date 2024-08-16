@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
   return (
     <footer className="text-white py-40">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col xl:flex-row justify-between gap-8 md:gap-20">
 
           {/* Brand and Social Media */}
-          <div className="space-y-8">
+          <div className="flex flex-col gap-y-8">
             <a href="/" className="block">
               <img
                 src={logo}
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               />
             </a>
   
-            <ul className="flex space-x-4">
+            <ul className="flex gap-x-4">
                 <SocialIcon
                     href="https://www.facebook.com/"
                     Icon={Facebook}
@@ -49,32 +49,33 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Experiences */}
-          <FooterColumn title="Legal">
-            <FooterLink href="/privacy-policy/" text="Privacy Policy" />
-            <FooterLink href="/terms-and-conditions/" text="Terms & Conditions" />
-            <FooterLink href="/cookies/" text="Cookies" />
-          </FooterColumn>
+          <div className='xl:max-w-[900px] w-full flex flex-col md:flex-row md:justify-between gap-y-10'>
+            {/* Experiences */}
+            <FooterColumn title="Legal">
+              <FooterLink href="/terms-and-conditions/" text="Terms & Conditions" />
+              <FooterLink href="/privacy-policy/" text="Privacy Policy" />
+              <FooterLink href="/cookies/" text="Cookies" />
+            </FooterColumn>
 
-          {/* About */}
-          <FooterColumn title="About">
-            <FooterLink href="/our-story/" text="Our Story" />
-            <FooterLink href="/faq/" text="FAQ" />
-          </FooterColumn>
+            {/* About */}
+            <FooterColumn title="About">
+              <FooterLink href="/our-story/" text="Our Story" />
+              <FooterLink href="/faq/" text="FAQ" />
+            </FooterColumn>
 
-          {/* Contact */}
-          <FooterColumn title="Contact">
-            <FooterLink href="mailto:carscontact@gmail.com" text="carscontact@gmail.com" />
-            <FooterLink href="tel:123%20456%20789" text="123 456 789" />
-            <FooterLink href="/get-started/" text="Get In Touch" />
-          </FooterColumn>
+            {/* Contact */}
+            <FooterColumn title="Contact">
+              <FooterLink href="mailto:carscontact@gmail.com" text="carscontact@gmail.com" />
+              <FooterLink href="tel:123%20456%20789" text="123 456 789" />
+              <FooterLink href="/get-started/" text="Get In Touch" />
+            </FooterColumn>
 
-          {/* Buttons */}
-          <div className="space-y-4">
-            <Button url="/get-more-info/" text="Get More Info" size="large" />
-            <Button url="/get-started/" text="Get Started" withArrow={true} size="large" className="bg-primary" />
+            {/* Buttons */}
+            <div className="flex flex-row md:flex-col gap-6 -order-1 md:order-1">
+              <Button url="/get-more-info/" text="Get More Info" size="small" className="w-full"/>
+              <Button url="/get-started/" text="Get Started" withArrow={true} size="small" className="bg-primary w-full" />
+            </div>
           </div>
-
 
         </div>
       </div>
