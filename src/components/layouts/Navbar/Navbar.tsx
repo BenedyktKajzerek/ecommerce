@@ -42,7 +42,7 @@ function Navbar() {
           </div>
 
           <div className="flex-shrink-0 hidden lg:flex">
-            <Button url="/" text="Get Started"/>
+            <Button url="/get-started/" text="Get Started"/>
           </div>
 
           <div className="flex lg:hidden z-[999]">

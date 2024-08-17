@@ -4,8 +4,8 @@ import { Button } from "../../ui/Button"
 import { Content } from "../../ui/Content"
 
 const btns = [
-  <Button url="/get-started" text="Get Started" withArrow={true} size="large" className="bg-primary" />,
-  <Button url="/get-more-info" text="Get More Info" size="large" />
+  <Button url="/get-started/" text="Get Started" withArrow={true} size="large" className="bg-primary" />,
+  <Button url="/faq/" text="Learn More" size="large" />
 ];
 
 const HeroHome = () => {

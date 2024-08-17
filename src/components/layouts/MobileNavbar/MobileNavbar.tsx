@@ -9,7 +9,7 @@ const MobileNavbar: React.FC = () => {
       <HeaderLink href="/about-us" variant="headerLink" className="text-6xl my-6 font-extrabold">ABOUT US</HeaderLink>
       <HeaderLink href="/showcase" variant="headerLink" className="text-6xl my-6 font-extrabold">SHOWCASE</HeaderLink>
       <HeaderLink href="/pricing" variant="headerLink" className="text-6xl my-6 font-extrabold">PRICING</HeaderLink>
-      <Button url="/" text="Get Started" className="my-6"/>
+      <Button url="/get-started/" text="Get Started" className="my-6"/>
     </div>
   );
 };

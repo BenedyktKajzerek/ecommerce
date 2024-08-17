@@ -13,7 +13,7 @@ const icons = [
 ];
 
 const btns = [
-  <Button url="/" text="Get Started" size="large" withArrow={true} className="bg-primary-light" />
+  <Button url="/learn-more/" text="Learn More" size="large" withArrow={true}/>
 ];
 
 function IconsSection() {

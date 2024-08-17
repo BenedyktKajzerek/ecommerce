@@ -9,7 +9,7 @@ const buttonVariants = cva(["transition-colors text-nowrap"], {
       default: [
         "relative bg-white font-medium text-black hover:text-white",
         "flex justify-center items-center overflow-hidden rounded-[20px]",
-        "before:content-[''] before:absolute before:w-[100%] before:h-[100%] before:bg-secondary-light",
+        "before:content-[''] before:absolute before:w-[101%] before:h-[100%] before:bg-secondary-light",
         "before:top-0 before:left-0 before:scale-x-0 before:transition-transform before:ease-in-out before:origin-right before:duration-500 hover:before:scale-x-100 hover:before:origin-left"
       ],
     },

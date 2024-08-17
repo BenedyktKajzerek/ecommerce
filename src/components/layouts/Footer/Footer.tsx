@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
 
             {/* Buttons */}
             <div className="flex flex-row md:flex-col gap-6 -order-1 md:order-1">
-              <Button url="/get-more-info/" text="Get More Info" size="small" className="w-full"/>
+              <Button url="/get-more-info/" text="Learn More" size="small" className="w-full"/>
               <Button url="/get-started/" text="Get Started" withArrow={true} size="small" className="bg-primary w-full" />
             </div>
           </div>

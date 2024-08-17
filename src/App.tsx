@@ -6,6 +6,7 @@ import { SwiperSection } from "./components/sections/SwiperSection";
 import { GallerySection } from "./components/sections/GallerySection/GallerySection";
 import { TestimonialsSection } from "./components/sections/TestimonialsSection";
 import { Footer } from "./components/layouts/Footer";
+import { Idkyet } from "./components/sections/idkyet";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <IconsSection />
         {/* <SliderSection /> */}
         <SwiperSection />
+        {/* <Idkyet /> */}
         <GallerySection />
         <TestimonialsSection />
       </main>

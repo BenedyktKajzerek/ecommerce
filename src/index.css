@@ -146,6 +146,7 @@ body {
     }
 
 }
+
 .swiper-content-clamp {
     padding: clamp(30px, 4.6vw, 80px);
 }
@@ -153,4 +154,29 @@ body {
 .span-stroke {
     -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black;
     color: transparent;
+}
+
+/* ==================== */
+/* === TESTIMONIALS === */
+/* ==================== */
+
+.span-stroke-testimonials {
+  -webkit-text-stroke: clamp(1px, 0.1vw, 2px) white;
+  color: transparent;
+}
+
+/* =============== */
+/* === GALLERY === */
+/* =============== */
+
+.rotate-1 {
+  transform: rotate(-10deg);
+}
+
+.rotate-2 {
+  transform: rotate(10deg) translateY(50px);
+}
+
+.ribbon {
+  padding: clamp(6px, 1vw, 16px);
 }

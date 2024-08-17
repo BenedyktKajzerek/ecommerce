@@ -34,10 +34,10 @@ function SwiperSection() {
               <img src={img} alt="" className="w-full h-auto"/>    
             </div>
             <div className="swiper-content-clamp md:w-1/2 bg-pink flex flex-col text-center align-middle justify-center">
-              <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
                 PREMIUM<br /> 
                 <span className="span-stroke">DETAILING</span>
-              </h1>
+              </h3>
               <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
             </div>
           </SwiperSlide>
@@ -46,10 +46,10 @@ function SwiperSection() {
               <img src={img} alt="" className="w-full h-auto"/>    
             </div>
             <div className="swiper-content-clamp md:w-1/2 bg-yellow flex flex-col text-center align-middle justify-center">
-              <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
                 PREMIUM<br /> 
                 <span className="span-stroke">DETAILING</span>
-              </h1>
+              </h3>
               <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
             </div>
           </SwiperSlide>
@@ -58,10 +58,10 @@ function SwiperSection() {
               <img src={img} alt="" className="w-full h-auto"/>    
             </div>
             <div className="swiper-content-clamp md:w-1/2 bg-purple flex flex-col text-center align-middle justify-center">
-              <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
                 PREMIUM<br /> 
                 <span className="span-stroke">DETAILING</span>
-              </h1>
+              </h3>
               <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
             </div>
           </SwiperSlide>
@@ -70,10 +70,10 @@ function SwiperSection() {
               <img src={img} alt="" className="w-full h-auto"/>    
             </div>
             <div className="swiper-content-clamp md:w-1/2 bg-cyan flex flex-col text-center align-middle justify-center">
-              <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
                 PREMIUM<br /> 
                 <span className="span-stroke">DETAILING</span>
-              </h1>
+              </h3>
               <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
             </div>
           </SwiperSlide>
@@ -82,10 +82,10 @@ function SwiperSection() {
               <img src={img} alt="" className="w-full h-auto"/>    
             </div>
             <div className="swiper-content-clamp md:w-1/2 bg-green flex flex-col text-center align-middle justify-center">
-              <h1 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
+              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
                 PREMIUM<br /> 
                 <span className="span-stroke">DETAILING</span>
-              </h1>
+              </h3>
               <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
             </div>
           </SwiperSlide>
