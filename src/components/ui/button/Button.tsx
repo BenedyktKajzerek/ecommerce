@@ -26,10 +26,10 @@ const buttonVariants = cva(["transition-colors text-nowrap"], {
 });
 
 export type ButtonProps = VariantProps<typeof buttonVariants> & ComponentProps<"a"> & { 
-    text: string;
-    url: string;
-    withArrow?: boolean;
-  };
+  text: string;
+  url: string;
+  withArrow?: boolean;
+};
 
 const Button: React.FC<ButtonProps> = ({
   variant,

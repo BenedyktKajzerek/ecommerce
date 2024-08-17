@@ -4,6 +4,29 @@ import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 import { FooterColumn, FooterLink, SocialIcon } from './components';
 import { Button } from '../../ui/Button';
 
+const socialMedia = [
+  {
+    href: "https://www.facebook.com/",
+    Icon: Facebook,
+    alt: "Facebook",
+  },
+  {
+    href: "https://www.youtube.com/channel/",
+    Icon: Youtube,
+    alt: "YouTube",
+  },
+  {
+    href: "https://x.com/",
+    Icon: Twitter,
+    alt: "Twitter",
+  },
+  {
+    href: "https://www.instagram.com/",
+    Icon: Instagram,
+    alt: "Instagram",
+  },
+];
+
 const Footer: React.FC = () => {
   return (
     <footer className="text-white py-40">
@@ -21,26 +44,13 @@ const Footer: React.FC = () => {
             </a>
   
             <ul className="flex gap-x-4">
+              {socialMedia.map(social => (
                 <SocialIcon
-                    href="https://www.facebook.com/"
-                    Icon={Facebook}
-                    alt="Facebook"
+                  href={ social.href }
+                  Icon={ social.Icon }
+                  alt={ social.alt }
                 />
-                <SocialIcon
-                    href="https://www.youtube.com/channel/"
-                    Icon={Youtube}
-                    alt="YouTube"
-                />
-                <SocialIcon
-                    href="https://x.com/"
-                    Icon={Twitter}
-                    alt="Twitter"
-                />
-                <SocialIcon
-                    href="https://www.instagram.com/"
-                    Icon={Instagram}
-                    alt="Instagram"
-                />
+              ))}
             </ul>
 
             <div className="text-sm text-grey">

@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../../../assets/unknown.png"
 import { HeaderLink } from "./components/HeaderLink";
 import { Button } from "../../ui/Button";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 
-function Navbar() {
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false)
+const Navbar: React.FC = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   useEffect(() => {
     const handler = () => {
-      if (!isScreenSmall()) setIsNavbarOpen(false)
-    }
+      if (!isScreenSmall()) setIsNavbarOpen(false);
+    };
 
-    window.addEventListener("resize", handler)
+    window.addEventListener("resize", handler);
 
     return () => {
-      removeEventListener("resize", handler)
-    }
-  }, [])
+      removeEventListener("resize", handler);
+    };
+  }, []);
 
   function isScreenSmall() {
     return window.innerWidth < 1024
-  }
+  };
   
   return (
     <header className="fixed top-0 left-0 w-full z-[999]">
@@ -55,7 +55,7 @@ function Navbar() {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export { Navbar };

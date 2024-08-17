@@ -2,6 +2,7 @@ import { Clock, Gem, Leaf, MessageSquareMore, ShieldCheck, Sparkles } from "luci
 import { Button } from "../../ui/Button";
 import { Content } from "../../ui/Content";
 import { IconCard } from "./componentts";
+import React from "react";
 
 const icons = [
   { icon: Gem, description: "Supreme Shine" },
@@ -13,26 +14,26 @@ const icons = [
 ];
 
 const btns = [
-  <Button url="/learn-more/" text="Learn More" size="large" withArrow={true}/>
+  <Button url="/learn-more/" text="Learn More" size="large" withArrow={ true } />
 ];
 
-function IconsSection() {
+const IconsSection: React.FC = () => {
   return (
     <section className="pt-20 lg:pt-40">
       <div className="container flex flex-col-reverse lg:flex-row lg:justify-between items-center h-[600px]">
         <div className="sm:min-w-[420px] max-w-[420px] lg:max-w-[680px] max-h-[400px] h-full w-full grid grid-cols-2 lg:grid-cols-3 gap-4">
             {icons.map((icon, index) => (
                 <IconCard
-                  key={index}
-                  IconComponent={icon.icon}
-                  description={icon.description}
+                  key={ index }
+                  IconComponent={ icon.icon }
+                  description={ icon.description }
                 />
             ))}
         </div>
 
         <Content 
-          header="PROFFESIONAL WORK"
-          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae odio quos, debitis voluptatibus nihil corrupti perspiciatis distinctio soluta velit sunt." buttons={btns} 
+          header="SATISFACTION ASSURED"
+          paragraph="Your satisfaction is our top priority; we combine flawless detailing with punctual service, ensuring every aspect of your experience is seamless and exceptional." buttons={ btns } 
           align="center"
         />
       </div>

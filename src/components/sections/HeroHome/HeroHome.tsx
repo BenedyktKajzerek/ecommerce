@@ -1,20 +1,21 @@
-import car from "../../../assets/car.mp4"
-import Tilt from "react-parallax-tilt"
-import { Button } from "../../ui/Button"
-import { Content } from "../../ui/Content"
+import car from "../../../assets/car.mp4";
+import Tilt from "react-parallax-tilt";
+import { Button } from "../../ui/Button";
+import { Content } from "../../ui/Content";
+import React from "react";
 
 const btns = [
   <Button url="/get-started/" text="Get Started" withArrow={true} size="large" className="bg-primary" />,
   <Button url="/faq/" text="Learn More" size="large" />
 ];
 
-const HeroHome = () => {
+const HeroHome: React.FC = () => {
   return (
     <section className="pt-40">
       <div className="container flex flex-col lg:flex-row lg:justify-between items-center h-[600px]">
         <Content 
           header="PREMIUM DETAILING"
-          paragraph="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae odio quos, debitis voluptatibus nihil corrupti perspiciatis distinctio soluta velit sunt." buttons={btns}
+          paragraph="Elevate your ride with our premium detailing. We don't settle for ordinary. Step into a realm where cars are not just washed; they are transformed." buttons={btns}
           align="left"
         />
 

@@ -26,11 +26,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <div className="lg:max-w-[552px] w-full flex flex-col-reverse lg:flex-col gap-4 flex-shrink-0">
         <div className="flex flex-col xs:flex-row gap-4 h-full">
           <div className="bg-grey-dark w-full h-max-[250px] rounded-[24px] xs:rounded-[50px] border border-[#303030] overflow-hidden aspect-square">
-            <img src={ personImage } alt={ name } className="w-full h-auto"/>
+            <img src={ personImage } alt={ name } className="w-full h-auto grayscale"/>
           </div>
 
-          <div className="bg-grey-dark w-full flex items-center rounded-[24px] xs:rounded-[50px] border border-[#303030] overflow-hidden aspect-square">
-            <img src={ carImage } alt={`${ name }'s car`} className="w-full h-auto" />
+          <div className="bg-grey-dark w-full rounded-[24px] xs:rounded-[50px] border border-[#303030] overflow-hidden aspect-square">
+            <img src={ carImage } alt={`${ name }'s car`} className="w-full h-auto"/>
           </div>
         </div>
 

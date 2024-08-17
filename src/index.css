@@ -169,11 +169,11 @@ body {
 /* === GALLERY === */
 /* =============== */
 
-.rotate-1 {
+.rotate-left {
   transform: rotate(-10deg);
 }
 
-.rotate-2 {
+.rotate-right {
   transform: rotate(10deg) translateY(50px);
 }
 

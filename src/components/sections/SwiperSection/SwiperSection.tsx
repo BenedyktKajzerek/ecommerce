@@ -1,16 +1,66 @@
-import { Button } from "../../ui/Button"
-import img from "../../../assets/unknown.png"
+import { Button } from "../../ui/Button";
+import car from "../../../assets/cars/ferrari2.jpg";
+import car2 from "../../../assets/cars/landrover.jpg";
+import car3 from "../../../assets/cars/mercedes3.jpg";
+import car4 from "../../../assets/cars/hyundai.jpg";
+import car5 from "../../../assets/cars/bmw3.jpg";
 
 // import Swiper JS
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from 'swiper/modules';
 
 // import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Slide } from "./components";
+import React from "react";
 
-function SwiperSection() {
+const SwiperSlideClass = "flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden";
 
+const slides = [
+  {
+    imageSrc: car,
+    imageAlt: "",
+    bgColor: "pink",
+    header: "Luxury",
+    headerStroke: "Care",
+    paragraph: "Indulge your vehicle with the luxury treatment it deserves. Our premium detailing services elevate your car’s appearance and feel, enhancing every surface with a touch of elegance and sophistication.",
+  },
+  {
+    imageSrc: car2,
+    imageAlt: "",
+    bgColor: "yellow",
+    header: "Precision",
+    headerStroke: "Perfection",
+    paragraph: "Our commitment to perfection is unmatched. Every inch of your vehicle receives meticulous care, from the finest polish to the most thorough interior cleaning, ensuring no detail is overlooked and every surface gleams.",
+  },
+  {
+    imageSrc: car3,
+    imageAlt: "",
+    bgColor: "purple",
+    header: "Guaranteed",
+    headerStroke: "Satisfaction",
+    paragraph: "Your satisfaction is the cornerstone of our business. We guarantee that every service meets our highest standards, with careful attention to detail and a commitment to exceeding your expectations in every way.",
+  },
+  {
+    imageSrc: car4,
+    imageAlt: "",
+    bgColor: "cyan",
+    header: "On-Time",
+    headerStroke: "Every Time",
+    paragraph: "We respect your time with efficient, on-schedule service that doesn’t compromise on quality. You can trust us to deliver exceptional results promptly, so you’re never kept waiting for a perfect finish.",
+  },
+  {
+    imageSrc: car5,
+    imageAlt: "",
+    bgColor: "green",
+    header: "Eco-Friendly",
+    headerStroke: "Detailing",
+    paragraph: "Protect your car and the environment with our green detailing solutions. We use natural, eco-conscious products that are tough on dirt but gentle on your vehicle and the planet, delivering a clean that’s as responsible as it is effective.",
+  },
+];
+
+const SwiperSection: React.FC = () => {
   return (
     <section className="pt-20 lg:pt-40 overflow-hidden">
       <div className="container slider-500">
@@ -29,79 +79,29 @@ function SwiperSection() {
           centeredSlides={true}
           className="mySwiper md:max-h-[700px] flex justify-center overflow-visible text-black"
         >
-          <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
-            <div className="md:w-1/2">
-              <img src={img} alt="" className="w-full h-auto"/>    
-            </div>
-            <div className="swiper-content-clamp md:w-1/2 bg-pink flex flex-col text-center align-middle justify-center">
-              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
-                PREMIUM<br /> 
-                <span className="span-stroke">DETAILING</span>
-              </h3>
-              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
-            <div className="md:w-1/2">
-              <img src={img} alt="" className="w-full h-auto"/>    
-            </div>
-            <div className="swiper-content-clamp md:w-1/2 bg-yellow flex flex-col text-center align-middle justify-center">
-              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
-                PREMIUM<br /> 
-                <span className="span-stroke">DETAILING</span>
-              </h3>
-              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
-            <div className="md:w-1/2">
-              <img src={img} alt="" className="w-full h-auto"/>    
-            </div>
-            <div className="swiper-content-clamp md:w-1/2 bg-purple flex flex-col text-center align-middle justify-center">
-              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
-                PREMIUM<br /> 
-                <span className="span-stroke">DETAILING</span>
-              </h3>
-              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
-            <div className="md:w-1/2">
-              <img src={img} alt="" className="w-full h-auto"/>    
-            </div>
-            <div className="swiper-content-clamp md:w-1/2 bg-cyan flex flex-col text-center align-middle justify-center">
-              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
-                PREMIUM<br /> 
-                <span className="span-stroke">DETAILING</span>
-              </h3>
-              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
-            <div className="md:w-1/2">
-              <img src={img} alt="" className="w-full h-auto"/>    
-            </div>
-            <div className="swiper-content-clamp md:w-1/2 bg-green flex flex-col text-center align-middle justify-center">
-              <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12">
-                PREMIUM<br /> 
-                <span className="span-stroke">DETAILING</span>
-              </h3>
-              <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex libero vero hic doloribus amet, beatae eveniet inventore soluta sapiente.</p>
-            </div>
-          </SwiperSlide>
-            
-
+          {slides.map(slide => (
+            <SwiperSlide className={ SwiperSlideClass }>
+              <Slide
+                imageSrc={ slide.imageSrc }
+                imageAlt={ slide.imageAlt }
+                bgColor={ slide.bgColor }
+                header={ slide.header }
+                headerStroke={ slide.headerStroke }
+                paragraph={ slide.paragraph }
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
 
         <div className="swiper-custom-pagination swiper-pagination-clickable mt-20  flex justify-center gap-5"/>
         
         <div className="flex justify-center">
-          <Button url="/" text="Get Started" size="large" withArrow={true} className="bg-primary-light mt-16"/>
+          <Button url="/get-started/" text="Get Started" size="large" withArrow={ true } className="bg-primary-light mt-16"/>
         </div>
           
       </div>
     </section>
-  )
-}
+  );
+};
 
 export { SwiperSection };
