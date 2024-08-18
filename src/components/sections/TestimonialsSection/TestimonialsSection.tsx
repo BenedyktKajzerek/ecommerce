@@ -1,10 +1,13 @@
 import { Testimonial } from "./components";
-import car from "../../../assets/cars/bmw.jpg";
-import car2 from "../../../assets/cars/minicooper.jpg";
-import car3 from "../../../assets/cars/bmw4.jpg";
-import person from "../../../assets/testimonials/man.jpg";
-import person2 from "../../../assets/testimonials/woman.jpg";
-import person3 from "../../../assets/testimonials/man2.jpg";
+import car from "../../../assets/testimonialsSection/bmw.jpg";
+import car2 from "../../../assets/testimonialsSection/minicooper.jpg";
+import car3 from "../../../assets/testimonialsSection/bmw4.jpg";
+import person from "../../../assets/testimonialsSection/man.jpg";
+import person2 from "../../../assets/testimonialsSection/woman.jpg";
+import person3 from "../../../assets/testimonialsSection/man2.jpg";
+
+import { motion, useTransform, useScroll } from "framer-motion";
+import React, { useRef } from "react";
 
 const testimonials = [
   {
@@ -30,20 +33,45 @@ const testimonials = [
   },
 ];
 
-const TestimonialsSection = () => {
+const TestimonialsSection: React.FC = () => {
   return (
     <section className="pt-40">
       <div className="container flex flex-col gap-12">
-        <div className="max-w-[1120px] w-full ml-auto mr-auto">
-            <h3 className="text-[calc(35px+5vw)] font-extrabold leading-[calc(35px+5vw)] mb-12">
-              <span className="span-stroke-testimonials">THE</span>
-              <br /> EXPERIENCE
-            </h3>
+
+        <div className="hidden lg:block">
+          <HorizontalScrollCarousel />
         </div>
 
-        <div>
-          {testimonials.map(testimonial => (
+        <div className="block lg:hidden">
+          <Testimonial 
+            text={ testimonials[2].text }
+            personImage={ testimonials[2].personImage }
+            carImage={ testimonials[2].carImage }
+            name={ testimonials[2].name }
+            profession={ testimonials[2].profession }
+          />
+        </div>
+      
+      </div>
+    </section>
+  );
+};
+
+const HorizontalScrollCarousel = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-129%"]);
+
+  return (
+    <section ref={ targetRef } className="relative h-[300vh]">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-40">
+          {testimonials.map((testimonial, index) => (
             <Testimonial 
+              key={ index }
               text={ testimonial.text }
               personImage={ testimonial.personImage }
               carImage={ testimonial.carImage }
@@ -51,8 +79,7 @@ const TestimonialsSection = () => {
               profession={ testimonial.profession }
             />
           ))}
-
-        </div>
+        </motion.div>
       </div>
     </section>
   );

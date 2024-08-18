@@ -84,8 +84,24 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  left: max(calc(200px * 9), 100%);
+  left: max(calc(200px * 5), 100%);
   animation-name: scrollLeft;
+}
+
+.itemL1 {
+  animation-delay: calc(30s / 5 * (5 - 1) * -1);
+}
+.itemL2 {
+  animation-delay: calc(30s / 5 * (5 - 2) * -1);
+}
+.itemL3 {
+  animation-delay: calc(30s / 5 * (5 - 3) * -1);
+}
+.itemL4 {
+  animation-delay: calc(30s / 5 * (5 - 4) * -1);
+}
+.itemL5 {
+  animation-delay: calc(30s / 5 * (5 - 5) * -1);
 }
 
 .itemRight {
@@ -160,7 +176,7 @@ body {
 /* === TESTIMONIALS === */
 /* ==================== */
 
-.span-stroke-testimonials {
+.span-stroke-white {
   -webkit-text-stroke: clamp(1px, 0.1vw, 2px) white;
   color: transparent;
 }

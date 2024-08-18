@@ -21,7 +21,7 @@ type carSlideProps = VariantProps<typeof carSlideVariants> & ComponentProps<"div
 export function CarSlide({ variant, src, className, ...props }: carSlideProps) {
     return (
         <div className={twMerge(carSlideVariants({ variant }), "relative h-[300px] overflow-hidden")}>
-            <img src={src} className="absolute h-[300px] min-w-auto min-w-[420px] left-1/2 transform -translate-x-1/2"/>
+            <img src={src} className="absolute min-w-[300px] h-[300px] left-1/2 transform -translate-x-1/2"/>
         </div>
     )
 }

@@ -44,8 +44,9 @@ const Footer: React.FC = () => {
             </a>
   
             <ul className="flex gap-x-4">
-              {socialMedia.map(social => (
+              {socialMedia.map((social, index) => (
                 <SocialIcon
+                  key={ index }
                   href={ social.href }
                   Icon={ social.Icon }
                   alt={ social.alt }

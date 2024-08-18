@@ -1,4 +1,4 @@
-import car from "../../../assets/car.mp4";
+import car from "../../../assets/HeroHome/car.mp4";
 import Tilt from "react-parallax-tilt";
 import { Button } from "../../ui/Button";
 import { Content } from "../../ui/Content";
@@ -11,7 +11,7 @@ const btns = [
 
 const HeroHome: React.FC = () => {
   return (
-    <section className="pt-40">
+    <section className="pt-52">
       <div className="container flex flex-col lg:flex-row lg:justify-between items-center h-[600px]">
         <Content 
           header="PREMIUM DETAILING"
