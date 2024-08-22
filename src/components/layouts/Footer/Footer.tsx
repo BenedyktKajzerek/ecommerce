@@ -29,7 +29,7 @@ const socialMedia = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-white py-40">
+    <footer className="text-white pt-40 pb-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col xl:flex-row justify-between gap-8 md:gap-20">
 

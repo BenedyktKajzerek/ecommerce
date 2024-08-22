@@ -63,12 +63,15 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-129%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", `-${(testimonials.length - 2) * 129}%`]);
 
   return (
-    <section ref={ targetRef } className="relative h-[300vh]">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-40">
+    <div ref={ targetRef } className="relative h-[300vh]">
+      <div className="sticky top-0 flex max-w-full h-screen items-center overflow-hidden">
+        <motion.div
+          style={{ x }}
+          className="flex gap-40"
+        >
           {testimonials.map((testimonial, index) => (
             <Testimonial 
               key={ index }
@@ -81,7 +84,7 @@ const HorizontalScrollCarousel = () => {
           ))}
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 

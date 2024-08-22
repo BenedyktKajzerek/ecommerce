@@ -1,6 +1,6 @@
-import { VariantProps, cva } from "class-variance-authority"
-import { ComponentProps, useEffect, useState } from "react"
-import { twMerge } from "tailwind-merge"
+import { VariantProps, cva } from "class-variance-authority";
+import { ComponentProps } from "react";
+import { twMerge } from "tailwind-merge";
 
 
 export const carSlideVariants = cva(["h-[300px] bg-slate-500 flex items-center"], {
@@ -14,14 +14,17 @@ export const carSlideVariants = cva(["h-[300px] bg-slate-500 flex items-center"]
     defaultVariants: {
         variant: "clip-1"
     }
-})
+});
 
-type carSlideProps = VariantProps<typeof carSlideVariants> & ComponentProps<"div"> & {src: string}
+type carSlideProps = 
+  VariantProps<typeof carSlideVariants> &
+  ComponentProps<"div"> &
+  {src: string};
 
 export function CarSlide({ variant, src, className, ...props }: carSlideProps) {
     return (
-        <div className={twMerge(carSlideVariants({ variant }), "relative h-[300px] overflow-hidden")}>
+        <div {...props} className={twMerge(carSlideVariants({ variant }), "relative h-[300px] overflow-hidden")}>
             <img src={src} className="absolute min-w-[300px] h-[300px] left-1/2 transform -translate-x-1/2"/>
         </div>
-    )
-}
+    );
+};

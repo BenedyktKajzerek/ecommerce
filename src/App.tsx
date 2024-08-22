@@ -17,7 +17,6 @@ export default function App() {
         <IconsSection />
         <SliderSection />
         <SwiperSection />
-        {/* <Idkyet /> */}
         <GallerySection />
         <TestimonialsSection />
       </main>

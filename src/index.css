@@ -5,14 +5,16 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(15, 15, 15);
-    color: white;
+  height: 100%;
+  min-height: 100%;
+  background-color: rgb(15, 15, 15);
+  color: white;
 }
 
 /* =============== */
@@ -20,37 +22,37 @@ body {
 /* =============== */
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1640px;
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 100%;
-    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1640px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .section {
-    background-color: #0f0f0f;
+  background-color: #0f0f0f;
 }
 
 @media all and (max-width: 1279px) {
-    .container {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media all and (max-width: 767px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media all and (max-width: 499px) {
-    .slider-500 {
-        padding: 0;
-    }
+  .slider-500 {
+    padding: 0;
+  }
 }
 
 /* ================================= */
@@ -146,30 +148,29 @@ body {
 /* ============== */
 
 .swiper-pagination-bullet {
-    background-color: grey;
-    width: 24px;
-    height: 3px;
-    border-radius: 0;
+  background-color: grey;
+  width: 24px;
+  height: 3px;
+  border-radius: 0;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: white;
+  background-color: white;
 }
 
 @media all and (min-width: 1400px) {
-    .swiper-header {
-        font-size: 4.5rem;
-    }
-
+  .swiper-header {
+    font-size: 4.5rem;
+  }
 }
 
 .swiper-content-clamp {
-    padding: clamp(30px, 4.6vw, 80px);
+  padding: clamp(30px, 4.6vw, 80px);
 }
 
 .span-stroke {
-    -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black;
-    color: transparent;
+  -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black;
+  color: transparent;
 }
 
 /* ==================== */

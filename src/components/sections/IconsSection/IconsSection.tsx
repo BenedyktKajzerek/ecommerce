@@ -3,6 +3,7 @@ import { Button } from "../../ui/Button";
 import { Content } from "../../ui/Content";
 import { IconCard } from "./componentts";
 import React from "react";
+import { ScrollReveal } from "../../ui/ScrollReveal";
 
 const icons = [
   { icon: Gem, description: "Supreme Shine" },
@@ -19,6 +20,7 @@ const btns = [
 
 const IconsSection: React.FC = () => {
   return (
+    <ScrollReveal duration={ 1 } delay={ 0.25 }>
     <section className="pt-20 lg:pt-40">
       <div className="container flex flex-col-reverse lg:flex-row lg:justify-between items-center h-[600px]">
         <div className="sm:min-w-[420px] max-w-[420px] lg:max-w-[680px] max-h-[400px] h-full w-full grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -38,6 +40,7 @@ const IconsSection: React.FC = () => {
         />
       </div>
     </section>
+    </ScrollReveal>
   );
 };
 

@@ -34,15 +34,15 @@ const Navbar: React.FC = () => {
 
           <div className="flex-shrink-0 gap-2 hidden lg:flex">
             <ul className="flex">
-              <HeaderLink href="/" variant="headerLink">Home</HeaderLink>
-              <HeaderLink href="/about-us" variant="headerLink">About Us</HeaderLink>
-              <HeaderLink href="/showcase" variant="headerLink">Showcase</HeaderLink>
-              <HeaderLink href="/pricing" variant="headerLink">Pricing</HeaderLink>
+              <HeaderLink to="/" text="Home" />
+              <HeaderLink to="/about-us" text="About Us" />
+              <HeaderLink to="/faq" text="Learn More" />
+              <HeaderLink to="/contact" text="Contact" />
             </ul>
           </div>
 
           <div className="flex-shrink-0 hidden lg:flex">
-            <Button url="/get-started/" text="Get Started"/>
+            <Button url="/get-started" text="Get Started"/>
           </div>
 
           <div className="flex lg:hidden z-[999]">

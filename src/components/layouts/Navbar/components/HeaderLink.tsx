@@ -1,23 +1,18 @@
-import { VariantProps, cva } from "class-variance-authority";
-import { ComponentProps } from "react";
-import { twMerge } from "tailwind-merge";
+import { Link } from "react-router-dom";
 
-export const linkVariants = cva(["transition-colors"], {
-    variants: {
-        variant: {
-            headerLink: ["text-white hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl"],
-        }
-    },
-    defaultVariants: {
-        variant: "headerLink"
-    }
-});
+interface LinkProps {
+  to: string;
+  text: string;
+};
 
-type LinkProps = VariantProps<typeof linkVariants> & ComponentProps<"a">;
-
-function HeaderLink({ variant, className, ...props }: LinkProps) {
+function HeaderLink({ to, text }: LinkProps) {
     return (
-        <a {...props} className={twMerge(linkVariants({ variant }), className)}/>
+        <Link
+          to={ to }
+          className="text-white hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl transition-colors" 
+        >
+          { text }
+        </Link>
     );
 };
 
