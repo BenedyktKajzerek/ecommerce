@@ -7,8 +7,30 @@ const Contact = () => {
       <Navbar />
 
       {/* Main Content Area */}
-      <div className="flex-grow container pt-60">
-        <div>Contact</div>
+      <div className="flex-grow container pt-40">
+        <h1 className="font-extrabold text-7xl text-center mb-12 bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">
+          Contant Us
+        </h1>
+
+        <div className="p-6 rounded-lg max-w-lg w-full ml-auto mr-auto text-center">
+          <p className="text-lg mb-4">
+            If you have any questions or need further information, feel free to reach out to us.
+          </p>
+          <p className="text-lg mb-4">
+            <strong>Address:</strong><br />
+            1234 Detail Street,<br />
+            Detailing, CA 12345
+          </p>
+          <p className="text-lg mb-4">
+            <strong>Email:</strong><br />
+            carscontact@gmail.com
+          </p>
+          <p className="text-lg">
+            <strong>Phone:</strong><br />
+            123 456 789
+          </p>
+        </div>
+      
       </div>
 
       <Footer/>

@@ -19,7 +19,7 @@ const GallerySection: React.FC = () => {
           <GalleryPicture
             imageSrc={ car }
             imageAlt="Mazda Rx-7"
-            hrefLink="/get-started/"
+            hrefLink="/contact"
             ribbonText="GET STARTED"
             ribbonBgColor="bg-cyan"
             rotate="left"
@@ -28,7 +28,7 @@ const GallerySection: React.FC = () => {
           <GalleryPicture
             imageSrc={ car2 }
             imageAlt="Mercedes"
-            hrefLink="/faq/"
+            hrefLink="/faq"
             ribbonText="LEARN MORE"
             ribbonBgColor="bg-purple"
             rotate="right"

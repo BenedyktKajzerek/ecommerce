@@ -70,21 +70,21 @@ const Footer: React.FC = () => {
 
             {/* About */}
             <FooterColumn title="About">
-              <FooterLink href="/our-story/" text="Our Story" />
-              <FooterLink href="/faq/" text="FAQ" />
+              <FooterLink href="/about-us" text="Our Story" />
+              <FooterLink href="/faq" text="FAQ" />
             </FooterColumn>
 
             {/* Contact */}
             <FooterColumn title="Contact">
               <FooterLink href="mailto:carscontact@gmail.com" text="carscontact@gmail.com" />
               <FooterLink href="tel:123%20456%20789" text="123 456 789" />
-              <FooterLink href="/get-started/" text="Get In Touch" />
+              <FooterLink href="/contact" text="Get In Touch" />
             </FooterColumn>
 
             {/* Buttons */}
             <div className="flex flex-row md:flex-col gap-6 -order-1 md:order-1">
-              <Button url="/get-more-info/" text="Learn More" size="small" className="w-full"/>
-              <Button url="/get-started/" text="Get Started" withArrow={true} size="small" className="bg-primary w-full" />
+              <Button url="/faq" text="Learn More" size="small" className="w-full"/>
+              <Button url="/contact" text="Get Started" withArrow={true} size="small" className="bg-primary w-full" />
             </div>
           </div>
 

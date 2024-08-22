@@ -2,6 +2,7 @@ import React, { ComponentProps } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const buttonVariants = cva(["transition-colors text-nowrap"], {
   variants: {
@@ -41,8 +42,8 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <a 
-      href={url}
+    <Link
+      to={url}
       {...props}
       className={twMerge(buttonVariants({ variant, size }), className)}
     >
@@ -52,7 +53,7 @@ const Button: React.FC<ButtonProps> = ({
           <ArrowRight className="ml-3 xl:mt-1 size-5 xl:size-6"/>
         )}
       </span>
-    </a>    
+    </Link>    
   );
 };
 

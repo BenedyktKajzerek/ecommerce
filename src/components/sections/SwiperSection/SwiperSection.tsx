@@ -1,9 +1,11 @@
-import { Button } from "../../ui/Button";
 import car from "../../../assets/swiperSection/ferrari2.jpg";
 import car2 from "../../../assets/swiperSection/landrover.jpg";
 import car3 from "../../../assets/swiperSection/mercedes3.jpg";
 import car4 from "../../../assets/swiperSection/hyundai.jpg";
 import car5 from "../../../assets/swiperSection/bmw3.jpg";
+
+import React from "react";
+import { Button } from "../../ui/Button";
 
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,9 +15,6 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Slide } from "./components";
-import React from "react";
-
-const SwiperSlideClass = "flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden";
 
 const slides = [
   {
@@ -80,7 +79,7 @@ const SwiperSection: React.FC = () => {
           className="mySwiper md:max-h-[700px] flex justify-center overflow-visible text-black"
         >
           {slides.map((slide, index) => (
-            <SwiperSlide key={ index } className={ SwiperSlideClass }>
+            <SwiperSlide key={ index } className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
               <Slide
                 imageSrc={ slide.imageSrc }
                 imageAlt={ slide.imageAlt }
@@ -93,10 +92,10 @@ const SwiperSection: React.FC = () => {
           ))}
         </Swiper>
 
-        <div className="swiper-custom-pagination swiper-pagination-clickable mt-20  flex justify-center gap-5"/>
+        <div className="swiper-custom-pagination swiper-pagination-clickable mt-20 flex justify-center gap-5"/>
         
         <div className="flex justify-center">
-          <Button url="/get-started/" text="Get Started" size="large" withArrow={ true } className="bg-primary-light mt-16"/>
+          <Button url="/contact" text="Get Started" size="large" withArrow={ true } className="bg-primary-light mt-16"/>
         </div>
           
       </div>

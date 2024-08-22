@@ -17,7 +17,9 @@ const FAQ = () => {
 
       <div className="container flex-grow pt-40">
         
-        <h1 className="font-extrabold text-7xl text-center mb-12 bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">FAQ:</h1>
+        <h1 className="font-extrabold text-7xl text-center mb-12 bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">
+          FAQ:
+        </h1>
 
         {questions.map(question => (
           <Question
@@ -49,7 +51,9 @@ const Question: React.FC<QuestionProps> = ({ id, title, text, isActive, onToggle
   return (
     <article className="bg-gradient-to-tr from-primary-dark to-primary-light rounded-lg shadow-lg p-6 mb-8 lg:w-1/2 ml-auto mr-auto text-black">
       <div className="flex justify-between items-center pb-4">
-        <p className="capitalize font-medium tracking-wide">{ title }</p>
+        <p className="capitalize font-medium tracking-wide">
+          { title }
+        </p>
         <button
           type="button"
           className="text-yellow-600 text-2xl"

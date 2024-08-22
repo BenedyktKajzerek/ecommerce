@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 interface FooterLinkProps {
@@ -8,9 +9,9 @@ interface FooterLinkProps {
 const FooterLink: React.FC<FooterLinkProps> = ({ href, text }) => {
   return (
     <li>
-      <a href={href} target="_self" className="text-grey hover:text-white">
+      <Link to={href} target="_self" className="text-grey hover:text-white">
         {text}
-      </a>
+      </Link>
     </li>
   );
 };

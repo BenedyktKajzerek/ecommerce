@@ -11,8 +11,6 @@
 }
 
 body {
-  height: 100%;
-  min-height: 100%;
   background-color: rgb(15, 15, 15);
   color: white;
 }
@@ -148,14 +146,14 @@ body {
 /* ============== */
 
 .swiper-pagination-bullet {
-  background-color: grey;
-  width: 24px;
-  height: 3px;
-  border-radius: 0;
+  background-color: grey !important;
+  width: 24px !important;
+  height: 3px !important;
+  border-radius: 0 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: white;
+  background-color: white !important;
 }
 
 @media all and (min-width: 1400px) {

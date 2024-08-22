@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface GalleryPictureProps {
   imageSrc: string;
@@ -19,19 +20,21 @@ const GalleryPicture: React.FC<GalleryPictureProps> = ({
   rotate
 }) => {
   return (
-    <a href={ hrefLink } className={`rotate-${ rotate } block relative max-w-[700px]`}>
-      <div className="overflow-hidden">
-        <img src={ imageSrc } alt={ imageAlt } className="h-auto hover:scale-105 transition-transform"/>
+    <Link to={ hrefLink }>
+      <div className={`rotate-${ rotate } block relative max-w-[700px]`}>
+        <div className="overflow-hidden">
+          <img src={ imageSrc } alt={ imageAlt } className="h-auto hover:scale-105 transition-transform"/>
+        </div>
+        
+        <div className={`ribbon ${ribbonBgColor} w-full absolute top-1/2 flex justify-center items-center overflow-hidden text-nowrap`}>
+          <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
+          <div>{ ribbonText }</div>
+          <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
+          <div>{ ribbonText }</div>
+          <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
+        </div>
       </div>
-      
-      <div className={`ribbon ${ribbonBgColor} w-full absolute top-1/2 flex justify-center items-center overflow-hidden text-nowrap`}>
-        <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
-        <div>{ ribbonText }</div>
-        <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
-        <div>{ ribbonText }</div>
-        <div><ArrowRight className="size-[calc(6px+1.6vw)] 2xl:size-10 sm:mt-1 ml-2 mr-2 sm:ml-5 sm:mr-5"/></div>
-      </div>
-    </a>
+    </Link>
   );
 };
 

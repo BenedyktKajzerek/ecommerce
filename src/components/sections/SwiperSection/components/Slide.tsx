@@ -18,12 +18,12 @@ const Slide: React.FC<SlideProps> = ({
   paragraph
 }) => {
   return (
-    <>
+    <div className="flex">
       <div className="md:w-1/2">
         <img src={ imageSrc } alt={ imageAlt } className="w-full h-auto"/>    
       </div>
 
-      <div className={`swiper-content-clamp ${ bgColor } md:w-1/2 flex flex-col text-center align-middle justify-center`}>
+      <div className={`swiper-content-clamp ${ bgColor } md:w-1/2 flex flex-col text-center align-middle justify-center z-50`}>
         <h3 className="swiper-header text-[calc(20px+3vw)] font-extrabold leading-[calc(15px+3vw)] 3xl:leading-[4rem] mb-12 uppercase">
           { header }<br /> 
           <span className="span-stroke">{ headerStroke }</span>
@@ -31,7 +31,7 @@ const Slide: React.FC<SlideProps> = ({
 
         <p className="text-xl">{ paragraph }</p>
       </div>
-    </>
+    </div>
   );
 };
 
