@@ -18,8 +18,8 @@ const Slide: React.FC<SlideProps> = ({
   paragraph
 }) => {
   return (
-    <div className="flex">
-      <div className="md:w-1/2">
+    <div className="flex flex-col md:max-h-[700px] md:flex-row xs:rounded-3xl overflow-hidden">
+      <div className="md:w-1/2 flex flex-shrink-0">
         <img src={ imageSrc } alt={ imageAlt } className="w-full h-auto"/>    
       </div>
 

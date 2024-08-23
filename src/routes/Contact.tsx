@@ -12,21 +12,21 @@ const Contact = () => {
           Contant Us
         </h1>
 
-        <div className="p-6 rounded-lg max-w-lg w-full ml-auto mr-auto text-center">
+        <div className="p-6 rounded-lg max-w-lg w-full ml-auto mr-auto text-center text-grey">
           <p className="text-lg mb-4">
             If you have any questions or need further information, feel free to reach out to us.
           </p>
           <p className="text-lg mb-4">
-            <strong>Address:</strong><br />
+            <strong className="text-white">Address:</strong><br />
             1234 Detail Street,<br />
             Detailing, CA 12345
           </p>
           <p className="text-lg mb-4">
-            <strong>Email:</strong><br />
+            <strong className="text-white">Email:</strong><br />
             carscontact@gmail.com
           </p>
           <p className="text-lg">
-            <strong>Phone:</strong><br />
+            <strong className="text-white">Phone:</strong><br />
             123 456 789
           </p>
         </div>

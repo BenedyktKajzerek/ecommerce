@@ -16,25 +16,14 @@ const questions = [
   },
   {
     id: 4,
-    title: "Can you detail both the interior and exterior of my vehicle?",
-    text: "Absolutely! Our detailing services cover both the interior and exterior of your vehicle. We meticulously clean, polish, and protect every surface, ensuring your car looks immaculate inside and out."
-  },
-  {
-    id: 5,
     title: "What precautions do you take to ensure my car’s safety during detailing?",
     text: "We take the utmost care to ensure your car’s safety during the detailing process. Our technicians are highly trained in handling luxury and exotic vehicles, and we use soft, non-abrasive tools and products. Additionally, we perform all work in a controlled environment to prevent any accidental damage."
   },
   {
-    id: 6,
+    id: 5,
     title: "How can I schedule an appointment, and what is your cancellation policy?",
     text: "You can easily schedule an appointment through our website or by giving us a call. We recommend booking in advance to secure your preferred date and time. If you need to cancel or reschedule, please contact us at least 24 hours before your appointment. Cancellations made less than 24 hours in advance may be subject to a fee."
   },
-  {
-    id: 7,
-    title: "How often should I get my supercar detailed?",
-    text: "We recommend detailing your supercar every 3 to 6 months, depending on how often you drive it and the conditions it’s exposed to. Regular detailing helps maintain the vehicle’s appearance, protect its surfaces, and retain its value."
-  },
-  // Add more questions as needed
 ];
 
 export { questions };

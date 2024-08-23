@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Footer } from "../components/layouts/Footer";
 import { Navbar } from "../components/layouts/Navbar";
-import { questions } from "../data/questions";
+import { questions } from "../data/FAQData";
 import { Minus, Plus } from "lucide-react";
 
 const FAQ = () => {
@@ -51,7 +51,7 @@ const Question: React.FC<QuestionProps> = ({ id, title, text, isActive, onToggle
   return (
     <article className="bg-gradient-to-tr from-primary-dark to-primary-light rounded-lg shadow-lg p-6 mb-8 lg:w-1/2 ml-auto mr-auto text-black">
       <div className="flex justify-between items-center pb-4">
-        <p className="capitalize font-medium tracking-wide">
+        <p className="capitalize font-bold tracking-wide text-black">
           { title }
         </p>
         <button

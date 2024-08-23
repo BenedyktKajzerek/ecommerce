@@ -11,13 +11,13 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between">
 
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">About Us</h1>
+          <div className="md:w-1/2 mb-8 md:mb-0 text-grey font-medium">
+            <h1 className="text-7xl font-extrabold mb-4 bg-gradient-to-bl from-primary-light to-secondary-dark text-transparent bg-clip-text">About Us</h1>
             <p className="text-lg mb-4">
               Welcome to Premium Detailing! We are a team of passionate individuals dedicated to providing the best
               products and services to our customers. Our mission is to deliver exceptional value and quality in everything we do.
             </p>
-            <p className="text-lg mb-4">
+            <p className="text-lg font- mb-4">
               Founded in 2012, we have grown from a small startup to a leader in our industry. We believe in innovation,
               integrity, and customer satisfaction as the cornerstones of our success.
             </p>

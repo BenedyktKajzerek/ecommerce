@@ -14,8 +14,8 @@ export default function App() {
 
       <main>
         <HeroHome />
-        <IconsSection />
         <SliderSection />
+        <IconsSection />
         <SwiperSection />
         <GallerySection />
         <TestimonialsSection />

@@ -11,7 +11,7 @@ import bmw2 from "../../../assets/cars/bmw2.jpg";
 import React from "react";
 import { CarSlide } from "./components/CarSlide";
 
-import { SLIDER_DATA } from "../../../data/data";
+import { SLIDER_DATA } from "../../../data/sliderData";
 
 const cars = [
   lamborghini, mercedes3, ferrari,

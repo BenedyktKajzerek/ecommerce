@@ -145,6 +145,10 @@ body {
 /* === SWIPER === */
 /* ============== */
 
+.swiper {
+  overflow: visible !important;
+}
+
 .swiper-pagination-bullet {
   background-color: grey !important;
   width: 24px !important;
@@ -158,17 +162,17 @@ body {
 
 @media all and (min-width: 1400px) {
   .swiper-header {
-    font-size: 4.5rem;
+    font-size: 4.5rem ;
   }
 }
 
 .swiper-content-clamp {
-  padding: clamp(30px, 4.6vw, 80px);
+  padding: clamp(30px, 4.6vw, 80px) ;
 }
 
 .span-stroke {
-  -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black;
-  color: transparent;
+  -webkit-text-stroke: clamp(1px, 0.1vw, 2px) black ;
+  color: transparent ;
 }
 
 /* ==================== */
