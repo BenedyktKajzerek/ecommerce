@@ -1,18 +1,23 @@
+import { ComponentProps } from "react";
 import { Link } from "react-router-dom";
+import { twMerge } from "tailwind-merge";
 
-interface LinkProps {
-  to: string;
-  text: string;
+type LinkProps = ComponentProps<"a"> & {
+  href: string;
+  title: string;
 };
 
-function HeaderLink({ to, text }: LinkProps) {
+const HeaderLink: React.FC<LinkProps> = ({ href, title, className }) => {
     return (
-        <Link
-          to={ to }
-          className="text-white hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl transition-colors" 
+      <Link
+        to={ href }
+        className={twMerge(
+          "text-white hover:text-primary bg-clip-text mx-5 inline-block font-medium text-xl transition-colors", 
+          className
+        )}
         >
-          { text }
-        </Link>
+        { title }
+      </Link>
     );
 };
 

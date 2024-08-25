@@ -25,8 +25,8 @@ const slides = [
     imageSrc: car3,
     imageAlt: "",
     bgColor: "bg-purple",
-    header: "Guaranteed",
-    headerStroke: "Satisfaction",
+    header: "Trust",
+    headerStroke: "Earned",
     paragraph: "Your satisfaction is the cornerstone of our business. We guarantee that every service meets our highest standards, with careful attention to detail and a commitment to exceeding your expectations in every way.",
   },
   {

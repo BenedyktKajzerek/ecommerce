@@ -5,8 +5,8 @@ import { Content } from "../../ui/Content";
 import React from "react";
 
 const btns = [
-  <Button url="/get-started/" text="Get Started" withArrow={true} size="large" className="bg-primary" />,
-  <Button url="/faq/" text="Learn More" size="large" />,
+  <Button url="/contact" text="Get Started" withArrow={true} size="large" className="bg-primary" />,
+  <Button url="/faq" text="Learn More" size="large" />,
 ];
 
 const HeroHome: React.FC = () => {

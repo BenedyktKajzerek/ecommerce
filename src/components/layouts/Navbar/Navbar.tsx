@@ -1,9 +1,53 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../../../assets/unknown.png"
-import { HeaderLink } from "./components/HeaderLink";
 import { Button } from "../../ui/Button";
-import MobileNavbar from "../MobileNavbar/MobileNavbar";
+import { AnimatePresence, motion } from "framer-motion";
+import { HeaderLink, MobileLink } from "./components";
+
+const headerLinks = [
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about-us" },
+  { title: "Learn More", href: "/faq" },
+  { title: "Contact", href: "/contact" },
+]
+
+const navbarVariants = {
+  initial: {
+    scaleY: 0,
+  },
+  animate: {
+    scaleY: 1,
+    transition: {
+      duration: 0.5,
+      ease: [0.12, 0, 0.39, 0],
+    },
+  },
+  exit: {
+    scaleY: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const containerVariants = {
+  initial: {
+    transition: {
+      staggerChildren: 0.09,
+      staggerDirection: -1,
+    },
+  },
+  open: {
+    transition: {
+      delayChildren: 0.2,
+      staggerChildren: 0.09,
+      staggerDirection: 1,
+    },
+  },
+};
 
 const Navbar: React.FC = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -32,12 +76,16 @@ const Navbar: React.FC = () => {
               <img src={logo} alt="Logo"/>
           </a>
 
+          {/* Navbar Links */}
           <div className="flex-shrink-0 gap-2 hidden lg:flex">
             <ul className="flex">
-              <HeaderLink to="/" text="Home" />
-              <HeaderLink to="/about-us" text="About Us" />
-              <HeaderLink to="/faq" text="Learn More" />
-              <HeaderLink to="/contact" text="Contact" />
+              {headerLinks.map((link, index) => (
+                <HeaderLink
+                  key={ index }
+                  href={ link.href }
+                  title={ link.title }
+                />
+              ))}
             </ul>
           </div>
 
@@ -45,13 +93,46 @@ const Navbar: React.FC = () => {
             <Button url="/contact" text="Get Started"/>
           </div>
 
+          {/* Navbar Hamburger */}
           <div className="flex lg:hidden z-[999]">
             <button onClick={() => setIsNavbarOpen(n => !n)}>
               {isNavbarOpen ? <X /> : <Menu />}
             </button>
           </div>
 
-          {isNavbarOpen && (<MobileNavbar />)}
+          {/* Mobile Navbar */}
+          <AnimatePresence>
+            {isNavbarOpen && (
+              <motion.div
+                variants={ navbarVariants }
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="fixed left-0 top-0 w-full h-screen origin-top bg-black p-10"
+              >
+                <div className="h-full flex flex-col">
+                  <motion.div
+                    variants={ containerVariants }
+                    initial="initial"
+                    animate="open"
+                    exit="initial"
+                    className="flex flex-col h-full justify-center items-center gap-12"
+                  >
+                    {headerLinks.map((link, index) => (
+                      <div className="overflow-hidden">
+                        <MobileLink
+                          key={ index }
+                          href={ link.href }
+                          title={ link.title }
+                          className="text-4xl sm:text-6xl font-extrabold"
+                          />
+                      </div>
+                    ))}
+                  </motion.div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
     </header>

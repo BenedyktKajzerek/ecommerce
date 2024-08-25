@@ -17,7 +17,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   profession 
 }) => {
   return (
-    <div className="min-w-[1120px] w-full flex flex-col items-center lg:items-start lg:flex-row gap-4">
+    <div className="lg:min-w-[1120px] w-full flex flex-col items-center lg:items-start lg:flex-row gap-4">
       <div className="bg-grey-dark w-full lg:w-1/2 xs:h-[460px] flex flex-col lg:items-center justify-center lg:text-center border border-[#303030] rounded-[24px] xs:rounded-[50px] text-2xl xs:text-4xl font-bold py-12 px-6 xs:p-16 gap-4">
         <Quote className="size-20 xs:size-28" color="grey"/>
         { text }

@@ -11,7 +11,7 @@ const socialMedia = [
     alt: "Facebook",
   },
   {
-    href: "https://www.youtube.com/channel/",
+    href: "https://www.youtube.com/",
     Icon: Youtube,
     alt: "YouTube",
   },
@@ -63,9 +63,9 @@ const Footer: React.FC = () => {
           <div className='xl:max-w-[900px] w-full flex flex-col md:flex-row md:justify-between gap-y-10'>
             {/* Experiences */}
             <FooterColumn title="Legal">
-              <FooterLink href="/terms-and-conditions/" text="Terms & Conditions" />
-              <FooterLink href="/privacy-policy/" text="Privacy Policy" />
-              <FooterLink href="/cookies/" text="Cookies" />
+              <FooterLink href="#" text="Terms & Conditions" />
+              <FooterLink href="#" text="Privacy Policy" />
+              <FooterLink href="#" text="Cookies" />
             </FooterColumn>
 
             {/* About */}
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
             {/* Buttons */}
             <div className="flex flex-row md:flex-col gap-6 -order-1 md:order-1">
               <Button url="/faq" text="Learn More" size="small" className="w-full"/>
-              <Button url="/contact" text="Get Started" withArrow={true} size="small" className="bg-primary w-full" />
+              <Button url="/contact" text="Get Started" withArrow={ true } size="small" className="bg-primary w-full" />
             </div>
           </div>
 

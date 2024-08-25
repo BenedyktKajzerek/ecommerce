@@ -15,7 +15,7 @@ const icons = [
 ];
 
 const btns = [
-  <Button url="/learn-more/" text="Learn More" size="large" withArrow={ true } />
+  <Button url="/faq" text="Learn More" size="large" withArrow={ true } />
 ];
 
 const IconsSection: React.FC = () => {
